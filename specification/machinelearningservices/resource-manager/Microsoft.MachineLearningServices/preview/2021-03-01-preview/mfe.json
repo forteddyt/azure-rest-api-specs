@@ -14,7 +14,7 @@
         "tags": [
           "BatchDeployment"
         ],
-        "summary": "Creates a batch inference deployment.",
+        "summary": "Creates/updates a batch inference deployment.",
         "operationId": "BatchDeployments_CreateOrUpdate",
         "consumes": [
           "application/json"
@@ -4904,7 +4904,7 @@
       "additionalProperties": false
     },
     "ComputeConfiguration": {
-      "description": "Compute binding definition.",
+      "description": "Configuration for compute binding.",
       "type": "object",
       "properties": {
         "target": {
@@ -5018,6 +5018,7 @@
       "additionalProperties": false
     },
     "ReferenceType": {
+      "description": "Enum to determine which reference method to use for an asset.",
       "enum": [
         "Id",
         "DataPath",
@@ -5031,6 +5032,7 @@
       "additionalProperties": false
     },
     "AssetReferenceBase": {
+      "description": "Base definition for asset references.",
       "required": [
         "referenceType"
       ],
@@ -5045,6 +5047,7 @@
       "additionalProperties": false
     },
     "IdAssetReference": {
+      "description": "Reference to an asset via it's resource ID.",
       "required": [
         "assetId"
       ],
@@ -5064,6 +5067,7 @@
       "additionalProperties": false
     },
     "DataPathAssetReference": {
+      "description": "Reference to an asset via it's path in a Datastore.",
       "type": "object",
       "allOf": [
         {
@@ -5072,9 +5076,11 @@
       ],
       "properties": {
         "path": {
+          "description": "The path of the file/directory in the datastore.",
           "type": "string"
         },
         "datastoreId": {
+          "description": "The resource ID of the datastore where the asset is located.",
           "type": "string"
         }
       },
@@ -5082,6 +5088,7 @@
       "additionalProperties": false
     },
     "OutputPathAssetReference": {
+      "description": "Reference to an asset via it's path in a job output.",
       "type": "object",
       "allOf": [
         {
@@ -5090,9 +5097,11 @@
       ],
       "properties": {
         "path": {
+          "description": "The path of the file/directory in the job output.",
           "type": "string"
         },
         "jobId": {
+          "description": "The resource ID of the job.",
           "type": "string"
         }
       },
@@ -5100,13 +5109,14 @@
       "additionalProperties": false
     },
     "CodeConfiguration": {
+      "description": "Configuration for a scoring code asset.",
       "required": [
         "scoringScript"
       ],
       "type": "object",
       "properties": {
         "codeId": {
-          "description": "The ID of the code asset.",
+          "description": "The resource ID of the code asset.",
           "type": "string",
           "x-ms-mutability": [
             "create",
@@ -5321,7 +5331,7 @@
       "additionalProperties": false
     },
     "BatchEndpoint": {
-      "description": "Batch endpoint configuration",
+      "description": "Batch endpoint configuration.",
       "type": "object",
       "properties": {
         "authMode": {
@@ -5348,7 +5358,7 @@
         },
         "scoringUri": {
           "format": "uri",
-          "description": "Endpoint URI",
+          "description": "Endpoint URI.",
           "type": "string",
           "readOnly": true,
           "x-ms-mutability": [
@@ -5357,7 +5367,7 @@
         },
         "swaggerUri": {
           "format": "uri",
-          "description": "Endpoint Swagger URI",
+          "description": "Endpoint Swagger URI.",
           "type": "string",
           "readOnly": true,
           "x-ms-mutability": [
@@ -5469,6 +5479,7 @@
       "additionalProperties": false
     },
     "CodeContainer": {
+      "description": "Code container for code asset versions.",
       "type": "object",
       "properties": {
         "properties": {
@@ -5535,18 +5546,18 @@
       "additionalProperties": false
     },
     "CodeVersion": {
-      "description": "Details of an RegisteredCode",
+      "description": "Code asset version details.",
       "required": [
         "path"
       ],
       "type": "object",
       "properties": {
         "datastoreId": {
-          "description": "The asset datastoreId",
+          "description": "The resource ID of the datastore where the asset is located.",
           "type": "string"
         },
         "path": {
-          "description": "The path of the file/directory.",
+          "description": "The path of the file/directory in the datastore.",
           "pattern": "[a-zA-Z0-9_]",
           "type": "string"
         },
@@ -5625,6 +5636,7 @@
       "additionalProperties": false
     },
     "DataContainer": {
+      "description": "Container for data asset versions.",
       "type": "object",
       "properties": {
         "properties": {
@@ -5691,6 +5703,7 @@
       "additionalProperties": false
     },
     "ContentsType": {
+      "description": "Enum to determine the datastore contents type.",
       "enum": [
         "AzureBlob",
         "AzureDataLakeGen1",
@@ -5709,6 +5722,7 @@
       "additionalProperties": false
     },
     "CredentialsType": {
+      "description": "Enum to determine the datastore credentials type.",
       "enum": [
         "AccountKey",
         "Certificate",
@@ -5725,6 +5739,7 @@
       "additionalProperties": false
     },
     "SecretsType": {
+      "description": "Enum to determine the datastore secrets type.",
       "enum": [
         "AccountKey",
         "Certificate",
@@ -5741,6 +5756,7 @@
       "additionalProperties": false
     },
     "DatastoreSecrets": {
+      "description": "Base definition for datastore secrets.",
       "required": [
         "secretsType"
       ],
@@ -5755,6 +5771,7 @@
       "additionalProperties": false
     },
     "AccountKeyDatastoreSecrets": {
+      "description": "Datastore account key secrets.",
       "type": "object",
       "allOf": [
         {
@@ -5771,6 +5788,7 @@
       "additionalProperties": false
     },
     "DatastoreCredentials": {
+      "description": "Base definition for datastore credentials.",
       "required": [
         "credentialsType"
       ],
@@ -5785,6 +5803,7 @@
       "additionalProperties": false
     },
     "AccountKeyDatastoreCredentials": {
+      "description": "Account key datastore credentials configuration.",
       "type": "object",
       "allOf": [
         {
@@ -5806,6 +5825,7 @@
       "additionalProperties": false
     },
     "CertificateDatastoreSecrets": {
+      "description": "Datastore certificate secrets.",
       "type": "object",
       "allOf": [
         {
@@ -5822,6 +5842,7 @@
       "additionalProperties": false
     },
     "CertificateDatastoreCredentials": {
+      "description": "Certificate datastore credentials configuration.",
       "required": [
         "clientId",
         "tenantId",
@@ -5871,6 +5892,7 @@
       "additionalProperties": false
     },
     "NoneDatastoreSecrets": {
+      "description": "Empty/none datastore secret.",
       "type": "object",
       "allOf": [
         {
@@ -5881,6 +5903,7 @@
       "additionalProperties": false
     },
     "NoneDatastoreCredentials": {
+      "description": "Empty/none datastore credentials.",
       "type": "object",
       "allOf": [
         {
@@ -5901,6 +5924,7 @@
       "additionalProperties": false
     },
     "SasDatastoreSecrets": {
+      "description": "Datastore SAS secrets.",
       "type": "object",
       "allOf": [
         {
@@ -5917,6 +5941,7 @@
       "additionalProperties": false
     },
     "SasDatastoreCredentials": {
+      "description": "SAS datastore credentials configuration.",
       "type": "object",
       "allOf": [
         {
@@ -5938,6 +5963,7 @@
       "additionalProperties": false
     },
     "ServicePrincipalDatastoreSecrets": {
+      "description": "Datastore service principal secrets.",
       "type": "object",
       "allOf": [
         {
@@ -5954,6 +5980,7 @@
       "additionalProperties": false
     },
     "ServicePrincipalDatastoreCredentials": {
+      "description": "Service Principal datastore credentials configuration.",
       "required": [
         "clientId",
         "tenantId"
@@ -5997,6 +6024,7 @@
       "additionalProperties": false
     },
     "SqlAdminDatastoreSecrets": {
+      "description": "Datastore SQL Admin secrets.",
       "type": "object",
       "allOf": [
         {
@@ -6013,6 +6041,7 @@
       "additionalProperties": false
     },
     "SqlAdminDatastoreCredentials": {
+      "description": "SQL Admin datastore credentials configuration.",
       "required": [
         "userId"
       ],
@@ -6042,6 +6071,7 @@
       "additionalProperties": false
     },
     "DatastoreContents": {
+      "description": "Base definition for datastore contents configuration.",
       "required": [
         "contentsType"
       ],
@@ -6056,6 +6086,7 @@
       "additionalProperties": false
     },
     "DatastoresContentsWithCredentials": {
+      "description": "Base definition for datastore contents with credentials.",
       "required": [
         "contentsType",
         "credentials"
@@ -6076,6 +6107,7 @@
       "additionalProperties": false
     },
     "AzureStorageContents": {
+      "description": "Azure Storage datastore configuration.",
       "required": [
         "accountName",
         "containerName",
@@ -6134,6 +6166,7 @@
       "additionalProperties": false
     },
     "AzureBlobContents": {
+      "description": "Azure Blob datastore configuration.",
       "required": [
         "accountName",
         "containerName",
@@ -6157,6 +6190,7 @@
       "additionalProperties": false
     },
     "AzureDataLakeGen1Contents": {
+      "description": "Azure Data Lake Gen1 datastore configuration.",
       "required": [
         "credentials",
         "storeName"
@@ -6182,6 +6216,7 @@
       "additionalProperties": false
     },
     "AzureDataLakeGen2Contents": {
+      "description": "Azure Data Lake Gen2 datastore configuration.",
       "required": [
         "accountName",
         "containerName",
@@ -6205,6 +6240,7 @@
       "additionalProperties": false
     },
     "AzureFileContents": {
+      "description": "Azure File datastore configuration.",
       "required": [
         "accountName",
         "containerName",
@@ -6228,6 +6264,7 @@
       "additionalProperties": false
     },
     "AzureSqlDatabaseContents": {
+      "description": "Azure SQL Database datastore configuration.",
       "required": [
         "contentsType",
         "credentials",
@@ -6289,6 +6326,7 @@
       "additionalProperties": false
     },
     "AzurePostgreSqlContents": {
+      "description": "Azure Postgre SQL datastore configuration.",
       "required": [
         "credentials",
         "databaseName",
@@ -6320,6 +6358,7 @@
       "additionalProperties": false
     },
     "GlusterFsContents": {
+      "description": "GlusterFs datastore configuration.",
       "required": [
         "serverAddress",
         "volumeName"
@@ -6354,6 +6393,7 @@
       "additionalProperties": false
     },
     "OriginType": {
+      "description": "Enum to determine the type of linked service.",
       "enum": [
         "Synapse"
       ],
@@ -6365,6 +6405,7 @@
       "additionalProperties": false
     },
     "LinkedInfo": {
+      "description": "Information about a datastore origin, if linked.",
       "type": "object",
       "properties": {
         "linkedId": {
@@ -6409,6 +6450,7 @@
           "$ref": "#/definitions/LinkedInfo"
         },
         "properties": {
+          "description": "The asset property dictionary.",
           "type": "object",
           "additionalProperties": {
             "type": "string"
@@ -6486,7 +6528,7 @@
       "additionalProperties": false
     },
     "DataVersion": {
-      "description": "Details of an DatasetDto",
+      "description": "Data asset version details.",
       "required": [
         "path"
       ],
@@ -6497,11 +6539,11 @@
           "$ref": "#/definitions/DatasetType"
         },
         "datastoreId": {
-          "description": "The asset datastoreId",
+          "description": "The resource ID of the datastore where the asset is located.",
           "type": "string"
         },
         "path": {
-          "description": "The path of the file/directory.",
+          "description": "The path of the file/directory in the datastore.",
           "pattern": "[a-zA-Z0-9_]",
           "type": "string"
         },
@@ -6580,6 +6622,7 @@
       "additionalProperties": false
     },
     "EnvironmentContainer": {
+      "description": "Container for environment specification versions.",
       "type": "object",
       "properties": {
         "properties": {
@@ -6916,6 +6959,7 @@
       "additionalProperties": false
     },
     "JobType": {
+      "description": "Enum to determine the type of job.",
       "enum": [
         "Command",
         "Sweep",
@@ -6967,6 +7011,7 @@
       "additionalProperties": false
     },
     "InputDataBinding": {
+      "description": "Input data binding configuration.",
       "type": "object",
       "properties": {
         "dataId": {
@@ -6997,10 +7042,11 @@
       "additionalProperties": false
     },
     "OutputDataBinding": {
+      "description": "Output data binding configuration.",
       "type": "object",
       "properties": {
         "datastoreId": {
-          "description": "ArmId of the datastore where the data output will be stored.",
+          "description": "Resource ID of the datastore where the data output will be stored.",
           "type": "string",
           "x-ms-mutability": [
             "create",
@@ -7035,6 +7081,7 @@
       "additionalProperties": false
     },
     "DistributionType": {
+      "description": "Enum to determine the job distribution type.",
       "enum": [
         "PyTorch",
         "TensorFlow",
@@ -7048,6 +7095,7 @@
       "additionalProperties": false
     },
     "DistributionConfiguration": {
+      "description": "Job distribution configuration.",
       "required": [
         "distributionType"
       ],
@@ -7066,6 +7114,7 @@
       "additionalProperties": false
     },
     "TensorFlow": {
+      "description": "Tensorflow distribution configuration.",
       "type": "object",
       "allOf": [
         {
@@ -7095,6 +7144,7 @@
       "additionalProperties": false
     },
     "Mpi": {
+      "description": "MPI distribution configuration.",
       "type": "object",
       "allOf": [
         {
@@ -7115,6 +7165,7 @@
       "additionalProperties": false
     },
     "PyTorch": {
+      "description": "Pytorch distribution configuration.",
       "type": "object",
       "allOf": [
         {
@@ -7132,6 +7183,7 @@
       "additionalProperties": false
     },
     "IdentityConfigurationType": {
+      "description": "Enum to determine identity framework.",
       "enum": [
         "Managed",
         "AMLToken"
@@ -7144,6 +7196,7 @@
       "additionalProperties": false
     },
     "IdentityConfiguration": {
+      "description": "Identity configuration.",
       "required": [
         "identityType"
       ],
@@ -7162,6 +7215,7 @@
       "additionalProperties": false
     },
     "AmlToken": {
+      "description": "AML Token identity configuration.",
       "type": "object",
       "allOf": [
         {
@@ -7172,6 +7226,7 @@
       "additionalProperties": false
     },
     "ManagedIdentity": {
+      "description": "Managed identity configuration.",
       "type": "object",
       "allOf": [
         {
@@ -7210,10 +7265,11 @@
       "additionalProperties": false
     },
     "JobOutput": {
+      "description": "Job output details.",
       "type": "object",
       "properties": {
         "datastoreId": {
-          "description": "ARM ID of the datastore where the job logs and artifacts are stored, or null for the default container (\"azureml\") in the workspace's storage account.",
+          "description": "Resource ID of the datastore where the job logs and artifacts are stored, or null for the default container (\"azureml\") in the workspace's storage account.",
           "type": "string",
           "readOnly": true,
           "x-ms-mutability": [
@@ -8553,7 +8609,7 @@
       "additionalProperties": false
     },
     "ModelVersion": {
-      "description": "Details of an ModelDto",
+      "description": "Model asset version details.",
       "required": [
         "path"
       ],
@@ -8567,11 +8623,11 @@
           }
         },
         "datastoreId": {
-          "description": "The asset datastoreId",
+          "description": "The resource ID of the datastore where the asset is located.",
           "type": "string"
         },
         "path": {
-          "description": "The path of the file/directory.",
+          "description": "The path of the file/directory in the datastore.",
           "pattern": "[a-zA-Z0-9_]",
           "type": "string"
         },
