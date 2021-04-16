@@ -18,13 +18,13 @@
           "status": "Running",
           "interactionEndpoints": {
               "Tracking": {
-                  "type": "Tracking",
+                  "jobEndpointType": "Tracking",
                   "port": null,
                   "endpoint": "azureml://tracking/endpoint",
                   "properties": {}
               },
               "Studio": {
-                  "type": "Studio",
+                  "jobEndpointType": "Studio",
                   "port": null,
                   "endpoint": "https://studio/endpoint",
                   "properties": {}
