@@ -20,7 +20,7 @@
               "datastoreId": "/subscriptions/00000000-1111-2222-3333-444444444444/resourceGroups/testrg123/providers/Microsoft.MachineLearningServices/workspaces/workspace123/datastores/datastore123",
               "flavors": {
                 "python_function": {
-                    "loader_module": "myLoaderModule"
+                  "loader_module": "myLoaderModule"
                 }
               },
               "tags": {

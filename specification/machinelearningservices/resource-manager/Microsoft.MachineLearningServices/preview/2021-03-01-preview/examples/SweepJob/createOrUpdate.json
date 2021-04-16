@@ -31,18 +31,18 @@
           "codeId": "/subscriptions/00000000-1111-2222-3333-444444444444/resourceGroups/resourceGroup-1234/providers/Microsoft.MachineLearningServices/workspaces/testworkspace/codes/mycode/versions/1",
           "command": "python file.py test",
           "environmentId": "/subscriptions/00000000-1111-2222-3333-444444444444/resourceGroups/resourceGroup-1234/providers/Microsoft.MachineLearningServices/workspaces/testworkspace/environments/AzureML-Tutorial/versions/1",
-          "timeout": "PT1M", 
+          "timeout": "PT1M",
           "inputDataBindings": {
-              "test": {
-                  "dataId": "/subscriptions/00000000-1111-2222-3333-444444444444/resourceGroups/resourceGroup-1234/providers/Microsoft.MachineLearningServices/workspaces/testworkspace/data/mydataset/versions/1",
-                  "pathOnCompute": "path/on/compute"
-              }
+            "test": {
+              "dataId": "/subscriptions/00000000-1111-2222-3333-444444444444/resourceGroups/resourceGroup-1234/providers/Microsoft.MachineLearningServices/workspaces/testworkspace/data/mydataset/versions/1",
+              "pathOnCompute": "path/on/compute"
+            }
           },
           "outputDataBindings": {
-              "test": {
-                  "datastoreId": "/subscriptions/00000000-1111-2222-3333-444444444444/resourceGroups/resourceGroup-1234/providers/Microsoft.MachineLearningServices/workspaces/testworkspace/datastore/mydatastore",
-                  "pathOnCompute": "path/on/compute"
-              }
+            "test": {
+              "datastoreId": "/subscriptions/00000000-1111-2222-3333-444444444444/resourceGroups/resourceGroup-1234/providers/Microsoft.MachineLearningServices/workspaces/testworkspace/datastore/mydatastore",
+              "pathOnCompute": "path/on/compute"
+            }
           },
           "distribution": {
             "distributionType": "PyTorch",
@@ -93,18 +93,18 @@
             "codeId": "/subscriptions/00000000-1111-2222-3333-444444444444/resourceGroups/resourceGroup-1234/providers/Microsoft.MachineLearningServices/workspaces/testworkspace/codes/mycode/versions/1",
             "command": "python file.py test",
             "environmentId": "/subscriptions/00000000-1111-2222-3333-444444444444/resourceGroups/resourceGroup-1234/providers/Microsoft.MachineLearningServices/workspaces/testworkspace/environments/AzureML-Tutorial/versions/1",
-            "timeout": "PT1M", 
+            "timeout": "PT1M",
             "inputDataBindings": {
-                "test": {
-                    "dataId": "/subscriptions/00000000-1111-2222-3333-444444444444/resourceGroups/resourceGroup-1234/providers/Microsoft.MachineLearningServices/workspaces/testworkspace/data/mydataset/versions/1",
-                    "pathOnCompute": "path/on/compute"
-                }
+              "test": {
+                "dataId": "/subscriptions/00000000-1111-2222-3333-444444444444/resourceGroups/resourceGroup-1234/providers/Microsoft.MachineLearningServices/workspaces/testworkspace/data/mydataset/versions/1",
+                "pathOnCompute": "path/on/compute"
+              }
             },
             "outputDataBindings": {
-                "test": {
-                    "datastoreId": "/subscriptions/00000000-1111-2222-3333-444444444444/resourceGroups/resourceGroup-1234/providers/Microsoft.MachineLearningServices/workspaces/testworkspace/datastore/mydatastore",
-                    "pathOnCompute": "path/on/compute"
-                }
+              "test": {
+                "datastoreId": "/subscriptions/00000000-1111-2222-3333-444444444444/resourceGroups/resourceGroup-1234/providers/Microsoft.MachineLearningServices/workspaces/testworkspace/datastore/mydatastore",
+                "pathOnCompute": "path/on/compute"
+              }
             },
             "distribution": {
               "distributionType": "PyTorch",
@@ -162,18 +162,18 @@
             "codeId": "/subscriptions/00000000-1111-2222-3333-444444444444/resourceGroups/resourceGroup-1234/providers/Microsoft.MachineLearningServices/workspaces/testworkspace/codes/mycode/versions/1",
             "command": "python file.py test",
             "environmentId": "/subscriptions/00000000-1111-2222-3333-444444444444/resourceGroups/resourceGroup-1234/providers/Microsoft.MachineLearningServices/workspaces/testworkspace/environments/AzureML-Tutorial/versions/1",
-            "timeout": "PT1M", 
+            "timeout": "PT1M",
             "inputDataBindings": {
-                "test": {
-                    "dataId": "/subscriptions/00000000-1111-2222-3333-444444444444/resourceGroups/resourceGroup-1234/providers/Microsoft.MachineLearningServices/workspaces/testworkspace/data/mydataset/versions/1",
-                    "pathOnCompute": "path/on/compute"
-                }
+              "test": {
+                "dataId": "/subscriptions/00000000-1111-2222-3333-444444444444/resourceGroups/resourceGroup-1234/providers/Microsoft.MachineLearningServices/workspaces/testworkspace/data/mydataset/versions/1",
+                "pathOnCompute": "path/on/compute"
+              }
             },
             "outputDataBindings": {
-                "test": {
-                    "datastoreId": "/subscriptions/00000000-1111-2222-3333-444444444444/resourceGroups/resourceGroup-1234/providers/Microsoft.MachineLearningServices/workspaces/testworkspace/datastore/mydatastore",
-                    "pathOnCompute": "path/on/compute"
-                }
+              "test": {
+                "datastoreId": "/subscriptions/00000000-1111-2222-3333-444444444444/resourceGroups/resourceGroup-1234/providers/Microsoft.MachineLearningServices/workspaces/testworkspace/datastore/mydatastore",
+                "pathOnCompute": "path/on/compute"
+              }
             },
             "distribution": {
               "distributionType": "PyTorch",
