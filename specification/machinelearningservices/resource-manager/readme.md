@@ -84,7 +84,7 @@ input-file:
   - Microsoft.MachineLearningServices/stable/2021-07-01/workspaceSkus.json
 ```
 
-### Tag: package-2021-04-01
+### Tag: package-2021-04-01 - foobar 123
 
 These settings apply only when `--tag=package-2021-04` is specified on the command line.
 
