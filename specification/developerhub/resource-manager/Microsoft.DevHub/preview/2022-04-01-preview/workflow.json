@@ -627,7 +627,7 @@
             "description": "Pull Request merged into repository."
           },
           {
-            "value": "removed",
+            "value": "merged",
             "description": "Workflow no longer found within repository."
           }
         ]

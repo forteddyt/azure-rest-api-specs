@@ -6161,7 +6161,7 @@
     },
     "SearchIndexerDataNoneIdentity": {
       "description": "Clears the identity property of a datasource.",
-      "x-ms-discriminator-value": "#Microsoft.Azure.Search.DataNoneIdentity",
+      "x-ms-discriminator-value": "#Microsoft.Azure.Search.SearchIndexerDataNoneIdentity",
       "allOf": [
         {
           "$ref": "#/definitions/SearchIndexerDataIdentity"
@@ -6170,7 +6170,7 @@
     },
     "SearchIndexerDataUserAssignedIdentity": {
       "description": "Specifies the identity for a datasource to use.",
-      "x-ms-discriminator-value": "#Microsoft.Azure.Search.DataUserAssignedIdentity",
+      "x-ms-discriminator-value": "#Microsoft.Azure.Search.SearchIndexerDataUserAssignedIdentity",
       "allOf": [
         {
           "$ref": "#/definitions/SearchIndexerDataIdentity"

@@ -21,10 +21,6 @@
           {
             "id": "3",
             "text": "Hola mundo"
-          },
-          {
-            "id": "4",
-            "text": "Tumhara naam kya hai?"
           }
         ]
       }
@@ -62,16 +58,6 @@
                 "name": "Spanish"
               },
               "id": "3",
-              "warnings": []
-            },
-            {
-              "detectedLanguage": {
-                "confidenceScore": 1,
-                "iso6391Name": "hi",
-                "name": "Hindi",
-                "script": "Latin"
-              },
-              "id": "4",
               "warnings": []
             }
           ],

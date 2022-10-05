@@ -14302,7 +14302,7 @@
           ]
         }
       },
-      "x-ms-discriminator-value": "SparkJobScalaEntry",
+      "x-ms-discriminator-value": "SparkJobPythonEntry",
       "additionalProperties": false
     },
     "SparkResourceConfiguration": {

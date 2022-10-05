@@ -480,8 +480,7 @@
                 "InProgress",
                 "Succeeded",
                 "Failed",
-                "Canceled",
-                "Deleting"
+                "Canceled"
               ],
               "type": "string",
               "readOnly": true,
@@ -837,11 +836,6 @@
         },
         "hasConflictOnManagedEnvironment": {
           "description": "<code>true</code> if there is a conflict on the Container App's managed environment; otherwise, <code>false</code>.",
-          "type": "boolean",
-          "readOnly": true
-        },
-        "conflictWithEnvironmentCustomDomain": {
-          "description": "<code>true</code> if there is a conflict on the Container App's managed environment level custom domain; otherwise, <code>false</code>.",
           "type": "boolean",
           "readOnly": true
         },

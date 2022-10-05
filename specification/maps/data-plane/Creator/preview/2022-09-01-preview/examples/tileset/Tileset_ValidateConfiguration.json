@@ -6,12 +6,13 @@
     "TilesetConfiguration": {
       "version": 1,
       "layers": {
-        "Indoor test": {
+        "Indoor unit": {
           "minZoom": 10,
           "maxZoom": 18,
           "features": {
             "featureClasses": [
-              "unit"
+              "unit",
+              "wall"
             ],
             "filter": [
               "any",
@@ -19,7 +20,7 @@
                 "!=",
                 [
                   "get",
-                  "featureType"
+                  "roomType"
                 ],
                 "conference"
               ],
@@ -27,7 +28,7 @@
                 "!=",
                 [
                   "get",
-                  "featureType"
+                  "roomType"
                 ],
                 "restroom"
               ]

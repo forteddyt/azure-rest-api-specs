@@ -3478,11 +3478,6 @@
           "type": "string",
           "readOnly": true
         },
-        "resourceId": {
-          "description": "The id of the resource.",
-          "type": "string",
-          "readOnly": true
-        },
         "startTime": {
           "description": "The start time of the operation",
           "type": "string",

@@ -1279,11 +1279,11 @@
       "type": "object",
       "properties": {
         "problem": {
-          "description": "The issue or opportunity identified by the recommendation and proposed solution.",
+          "description": "The issue or opportunity identified by the recommendation.",
           "type": "string"
         },
         "solution": {
-          "description": "The issue or opportunity identified by the recommendation and proposed solution.",
+          "description": "The remediation action suggested by the recommendation.",
           "type": "string"
         }
       }

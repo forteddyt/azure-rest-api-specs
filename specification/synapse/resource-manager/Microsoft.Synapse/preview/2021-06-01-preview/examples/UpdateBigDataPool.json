@@ -43,8 +43,7 @@
             "content": "",
             "filename": "requirements.txt"
           },
-          "defaultSparkLogFolder": "/logs",
-          "isAutotuneEnabled": false
+          "defaultSparkLogFolder": "/logs"
         }
       }
     },

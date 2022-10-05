@@ -6,8 +6,7 @@
     "body": {
       "createTokenWithScopes": [
         "chat"
-      ],
-      "expiresInMinutes": 60
+      ]
     }
   },
   "responses": {

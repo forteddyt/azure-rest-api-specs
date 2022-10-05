@@ -373,7 +373,6 @@
           "items": {
             "$ref": "./cluster.json#/definitions/RuntimeScriptAction"
           },
-          "x-ms-identifiers": [],
           "description": "The list of install script actions."
         },
         "uninstallScriptActions": {
@@ -381,7 +380,6 @@
           "items": {
             "$ref": "./cluster.json#/definitions/RuntimeScriptAction"
           },
-          "x-ms-identifiers": [],
           "description": "The list of uninstall script actions."
         },
         "httpsEndpoints": {
@@ -389,7 +387,6 @@
           "items": {
             "$ref": "#/definitions/ApplicationGetHttpsEndpoint"
           },
-          "x-ms-identifiers": [],
           "description": "The list of application HTTPS endpoints."
         },
         "sshEndpoints": {
@@ -397,7 +394,6 @@
           "items": {
             "$ref": "#/definitions/ApplicationGetEndpoint"
           },
-          "x-ms-identifiers": [],
           "description": "The list of application SSH endpoints."
         },
         "provisioningState": {
@@ -419,9 +415,6 @@
           "items": {
             "$ref": "./cluster.json#/definitions/Errors"
           },
-          "x-ms-identifiers": [
-            "code"
-          ],
           "description": "The list of errors."
         },
         "createdDate": {

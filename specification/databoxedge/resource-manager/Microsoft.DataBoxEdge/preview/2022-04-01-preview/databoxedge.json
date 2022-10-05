@@ -5164,13 +5164,11 @@
         },
         "etag": {
           "description": "The etag for the devices.",
-          "type": "string",
-          "readOnly": true
+          "type": "string"
         },
         "identity": {
           "$ref": "#/definitions/ResourceIdentity",
-          "description": "Msi identity of the resource",
-          "readOnly": true
+          "description": "Msi identity of the resource"
         },
         "kind": {
           "description": "The kind of the device.",
@@ -5184,8 +5182,7 @@
           "x-ms-enum": {
             "name": "DataBoxEdgeDeviceKind",
             "modelAsString": true
-          },
-          "readOnly": true
+          }
         },
         "systemData": {
           "$ref": "../../../../../common-types/resource-management/v2/types.json#/definitions/systemData",
@@ -5420,7 +5417,6 @@
             "Maintenance"
           ],
           "type": "string",
-          "readOnly": true,
           "x-ms-enum": {
             "name": "DataBoxEdgeDeviceStatus",
             "modelAsString": true

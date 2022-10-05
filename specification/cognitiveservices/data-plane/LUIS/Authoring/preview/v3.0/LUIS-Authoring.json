@@ -459,8 +459,7 @@
             "in": "path",
             "description": "The example ID.",
             "required": true,
-            "type": "integer",
-            "format": "int64"
+            "type": "integer"
           }
         ],
         "responses": {
@@ -9029,7 +9028,6 @@
       "properties": {
         "id": {
           "type": "integer",
-          "format": "int64",
           "description": "ID of Labeled Utterance."
         },
         "text": {
@@ -9396,6 +9394,7 @@
     "HierarchicalEntityExtractor": {
       "description": "Hierarchical Entity Extractor.",
       "type": "object",
+      "x-ms-discriminator-value": "Hierarchical Entity Extractor",
       "allOf": [
         {
           "$ref": "#/definitions/ModelInfo"
@@ -9424,6 +9423,7 @@
     "CompositeEntityExtractor": {
       "description": "A Composite Entity Extractor.",
       "type": "object",
+      "x-ms-discriminator-value": "Composite Entity Extractor",
       "allOf": [
         {
           "$ref": "#/definitions/ModelInfo"
@@ -9452,6 +9452,7 @@
     "ClosedListEntityExtractor": {
       "description": "List Entity Extractor.",
       "type": "object",
+      "x-ms-discriminator-value": "List Entity Extractor",
       "allOf": [
         {
           "$ref": "#/definitions/ModelInfo"
@@ -9480,6 +9481,7 @@
     "PrebuiltEntityExtractor": {
       "description": "Prebuilt Entity Extractor.",
       "type": "object",
+      "x-ms-discriminator-value": "Prebuilt Entity Extractor",
       "allOf": [
         {
           "$ref": "#/definitions/ModelInfo"
@@ -9574,6 +9576,7 @@
     "IntentClassifier": {
       "description": "Intent Classifier.",
       "type": "object",
+      "x-ms-discriminator-value": "Intent Classifier",
       "allOf": [
         {
           "$ref": "#/definitions/ModelInfo"
@@ -9593,6 +9596,7 @@
     "EntityExtractor": {
       "description": "Entity Extractor.",
       "type": "object",
+      "x-ms-discriminator-value": "Entity Extractor",
       "allOf": [
         {
           "$ref": "#/definitions/ModelInfo"
@@ -9615,6 +9619,7 @@
     "NDepthEntityExtractor": {
       "description": "N-Depth Entity Extractor.",
       "type": "object",
+      "x-ms-discriminator-value": "N-Depth Entity Extractor",
       "allOf": [
         {
           "$ref": "#/definitions/ModelInfo"
@@ -9752,7 +9757,7 @@
           "type": "string"
         },
         "ExampleId": {
-          "description": "The newly created example ID.",
+          "description": "The newly created sample ID.",
           "type": "integer",
           "format": "int64"
         }
@@ -10358,6 +10363,7 @@
     "RegexEntityExtractor": {
       "description": "Regular Expression Entity Extractor.",
       "type": "object",
+      "x-ms-discriminator-value": "Regex Entity Extractor",
       "allOf": [
         {
           "$ref": "#/definitions/ModelInfo"
@@ -10383,6 +10389,7 @@
     "PatternAnyEntityExtractor": {
       "description": "Pattern.Any Entity Extractor.",
       "type": "object",
+      "x-ms-discriminator-value": "Pattern.Any Entity Extractor",
       "allOf": [
         {
           "$ref": "#/definitions/ModelInfo"

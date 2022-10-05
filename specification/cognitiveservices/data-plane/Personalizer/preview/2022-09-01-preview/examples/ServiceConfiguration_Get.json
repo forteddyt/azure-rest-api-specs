@@ -20,8 +20,7 @@
         "learningMode": "Online",
         "isAutoOptimizationEnabled": true,
         "autoOptimizationFrequency": "P7D",
-        "autoOptimizationStartDate": "2019-01-19T00:00:00Z",
-        "modelRetrainDays": 0
+        "autoOptimizationStartDate": "2019-01-19T00:00:00Z"
       }
     }
   }
