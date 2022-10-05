@@ -1,8 +1,8 @@
 {
   "parameters": {
-    "subscriptionId": "aaaaaaaaaaaaaaaaaa",
+    "subscriptionId": "aaaaaaaaaaaaaaaaaaaaa",
     "resourceGroupName": "rgelasticsan",
-    "elasticSanName": "ti7q-k952-1qB3J_5",
+    "elasticSanName": "2gx-ammi0",
     "api-version": "2021-11-20-preview"
   },
   "responses": {

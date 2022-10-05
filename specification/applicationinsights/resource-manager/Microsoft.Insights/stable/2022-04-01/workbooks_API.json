@@ -308,12 +308,6 @@
           }
         ],
         "responses": {
-          "200": {
-            "description": "The workbook definition updated.",
-            "schema": {
-              "$ref": "#/definitions/Workbook"
-            }
-          },
           "201": {
             "description": "The workbook definition updated.",
             "schema": {
@@ -656,7 +650,9 @@
         },
         "innerError": {
           "description": "Internal error details.",
-          "$ref": "#/definitions/WorkbookInnerErrorTrace",
+          "items": {
+            "$ref": "#/definitions/WorkbookInnerErrorTrace"
+          },
           "readOnly": true
         }
       }

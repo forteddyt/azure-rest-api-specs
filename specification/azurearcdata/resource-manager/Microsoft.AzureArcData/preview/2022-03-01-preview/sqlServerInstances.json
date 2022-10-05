@@ -119,13 +119,10 @@
           "type": "string",
           "description": "SQL Server license type.",
           "enum": [
-            "Undefined",
+            "Paid",
             "Free",
             "HADR",
-            "ServerCAL",
-            "LicenseOnly",
-            "PAYG",
-            "Paid"
+            "Undefined"
           ],
           "x-ms-enum": {
             "name": "arcSqlServerLicenseType",

@@ -324,10 +324,7 @@
           "type": "array",
           "items": {
             "$ref": "#/definitions/VersionSpec"
-          },
-          "x-ms-identifiers": [
-            "friendlyName"
-          ]
+          }
         }
       },
       "readOnly": true
@@ -386,10 +383,7 @@
           "type": "array",
           "items": {
             "$ref": "#/definitions/RegionalQuotaCapability"
-          },
-          "x-ms-identifiers": [
-            "regionName"
-          ]
+          }
         }
       },
       "readOnly": true
@@ -475,8 +469,7 @@
           "type": "array",
           "items": {
             "$ref": "#/definitions/Usage"
-          },
-          "x-ms-identifiers": []
+          }
         }
       },
       "readOnly": true
@@ -504,8 +497,7 @@
           "type": "array",
           "items": {
             "$ref": "#/definitions/VmSizeCompatibilityFilterV2"
-          },
-          "x-ms-identifiers": []
+          }
         },
         "vmSizeProperties": {
           "description": "The vm size properties.",
@@ -513,9 +505,6 @@
           "items": {
             "$ref": "#/definitions/VmSizeProperty"
           },
-          "x-ms-identifiers": [
-            "name"
-          ],
           "readOnly": true
         },
         "billingResources": {
@@ -523,8 +512,7 @@
           "type": "array",
           "items": {
             "$ref": "#/definitions/BillingResources"
-          },
-          "x-ms-identifiers": []
+          }
         }
       }
     },
@@ -670,20 +658,14 @@
           "type": "array",
           "items": {
             "$ref": "#/definitions/BillingMeters"
-          },
-          "x-ms-identifiers": [
-            "meter"
-          ]
+          }
         },
         "diskBillingMeters": {
           "description": "The managed disk billing information.",
           "type": "array",
           "items": {
             "$ref": "#/definitions/DiskBillingMeters"
-          },
-          "x-ms-identifiers": [
-            "diskRpMeter"
-          ]
+          }
         }
       }
     },
@@ -801,20 +783,14 @@
           "type": "array",
           "items": {
             "$ref": "#/definitions/ValidationErrorInfo"
-          },
-          "x-ms-identifiers": [
-            "code"
-          ]
+          }
         },
         "validationWarnings": {
           "description": "The validation warnings.",
           "type": "array",
           "items": {
             "$ref": "#/definitions/ValidationErrorInfo"
-          },
-          "x-ms-identifiers": [
-            "code"
-          ]
+          }
         },
         "estimatedCreationDuration": {
           "description": "The estimated creation duration.",
@@ -826,10 +802,7 @@
           "type": "array",
           "items": {
             "$ref": "#/definitions/AaddsResourceDetails"
-          },
-          "x-ms-identifiers": [
-            "resourceId"
-          ]
+          }
         }
       }
     },

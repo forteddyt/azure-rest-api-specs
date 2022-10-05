@@ -204,7 +204,7 @@
         "x-ms-odata": "#/definitions/DscCompilationJob"
       }
     },
-    "/subscriptions/{subscriptionId}/resourceGroups/{resourceGroupName}/providers/Microsoft.Automation/automationAccounts/{automationAccountName}/compilationjobs/{compilationJobName}/streams": {
+    "/subscriptions/{subscriptionId}/resourceGroups/{resourceGroupName}/providers/Microsoft.Automation/automationAccounts/{automationAccountName}/compilationjobs/{jobId}/streams": {
       "get": {
         "tags": [
           "DscCompilationJob"
@@ -227,12 +227,12 @@
             "$ref": "../../common/v1/definitions.json#/parameters/AutomationAccountNameParameter"
           },
           {
-            "name": "compilationJobName",
+            "name": "jobId",
             "in": "path",
             "required": true,
             "type": "string",
             "format": "uuid",
-            "description": "The DSC configuration Id."
+            "description": "The job id."
           },
           {
             "$ref": "../../common/v1/definitions.json#/parameters/SubscriptionIdParameter"
@@ -257,7 +257,7 @@
         }
       }
     },
-    "/subscriptions/{subscriptionId}/resourceGroups/{resourceGroupName}/providers/Microsoft.Automation/automationAccounts/{automationAccountName}/compilationjobs/{compilationJobName}/streams/{jobStreamId}": {
+    "/subscriptions/{subscriptionId}/resourceGroups/{resourceGroupName}/providers/Microsoft.Automation/automationAccounts/{automationAccountName}/compilationjobs/{jobId}/streams/{jobStreamId}": {
       "get": {
         "tags": [
           "DscCompilationJob"
@@ -280,12 +280,12 @@
             "$ref": "../../common/v1/definitions.json#/parameters/AutomationAccountNameParameter"
           },
           {
-            "name": "compilationJobName",
+            "name": "jobId",
             "in": "path",
             "required": true,
             "type": "string",
             "format": "uuid",
-            "description": "The DSC configuration Id."
+            "description": "The job id."
           },
           {
             "name": "jobStreamId",

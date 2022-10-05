@@ -2,13 +2,13 @@
   "parameters": {
     "geography": "us",
     "api-version": "2022-09-01-preview",
-    "tilesetId": "{tilesetId}"
+    "tilesetId": "d8fa86de-bb0f-4a02-a6ff-62ae7545dd84"
   },
   "responses": {
     "200": {
       "body": {
-        "tilesetId": "{tilesetId}",
-        "datasetId": "{datasetId}",
+        "tilesetId": "d8fa86de-bb0f-4a02-a6ff-62ae7545dd84",
+        "datasetId": "63b18a6b-ac35-4b23-a1d9-ffa1003ad50b",
         "description": "My first tileset",
         "minZoom": 16,
         "maxZoom": 18,
@@ -52,7 +52,7 @@
           }
         }
       },
-      "defaultMapConfigurationId": "{defaultMapConfigurationId}"
+      "defaultMapConfigurationId": "5d70a5a8-a11b-abbc-517f-ddd32a23fab1"
     }
   }
 }

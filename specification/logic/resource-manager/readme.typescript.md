@@ -9,6 +9,4 @@ typescript:
   package-name: "@azure/arm-logic"
   output-folder: "$(typescript-sdks-folder)/sdk/logic/arm-logic"
   generate-metadata: true
-modelerfour:
-  treat-type-object-as-anything: true
 ```

@@ -157,11 +157,6 @@
             }
           }
         },
-        "x-ms-examples": {
-          "List Operations": {
-            "$ref": "./examples/OperationsList.json"
-          }
-        },
         "x-ms-pageable": {
           "nextLinkName": "nextLink"
         }
@@ -298,7 +293,7 @@
         "operationId": "MarketplaceAgreements_List",
         "description": "List marketplace agreements in the subscription.",
         "x-ms-examples": {
-          "ListMarketplaceTerms": {
+          "SetMarketplaceTerms": {
             "$ref": "./examples/ListMarketplaceTerms.json"
           }
         },

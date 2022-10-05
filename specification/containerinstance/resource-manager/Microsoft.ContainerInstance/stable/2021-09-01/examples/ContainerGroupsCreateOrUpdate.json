@@ -171,7 +171,8 @@
           ],
           "diagnostics": {
             "logAnalytics": {
-              "workspaceId": "workspaceid"
+              "workspaceId": "workspaceid",
+              "workspaceKey": ""
             }
           },
           "dnsConfig": {

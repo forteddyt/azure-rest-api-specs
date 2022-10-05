@@ -917,7 +917,6 @@
         "Enabled",
         "Disabled"
       ],
-      "default": "Enabled",
       "type": "string",
       "x-ms-enum": {
         "name": "PublicNetworkAccess",

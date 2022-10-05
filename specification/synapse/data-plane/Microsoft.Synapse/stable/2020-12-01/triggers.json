@@ -716,8 +716,7 @@
       "type": "string",
       "in": "path",
       "x-ms-skip-url-encoding": true,
-      "x-ms-parameter-location": "client",
-      "format": "uri"
+      "x-ms-parameter-location": "client"
     },
     "triggerName": {
       "name": "triggerName",
